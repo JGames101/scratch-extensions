@@ -15,13 +15,17 @@
     ext.alert_block = function(string) {
         alert(string);
     };
+    ext.confirm_block = function(string) {
+        return confirm(string);
+    };
 
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
             // Block type, block name, function name, param1 default value, param2 default value
-            ['r', 'ask %s', 'ask_block', "What's your name?"],
-			[' ', 'alert %s', 'alert_block', "hello world!"],
+        	['r', 'ask %s', 'ask_block', "What's your name?"],
+		[' ', 'alert %s', 'alert_block', "hello world!"],
+		['b', 'confirm %s', 'confirm_block', ""],
         ]
     };
 
