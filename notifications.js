@@ -28,4 +28,4 @@
 
     // Register the extension
     ScratchExtensions.register('Desktop Notifications', descriptor, ext);
-}({});
+})({});
