@@ -7,7 +7,7 @@
     ext._getStatus = function() {
 	Notification.requestPermission();
 	if (Notification.permission !== "granted")
-	return {status: 1, msg: 'Notifications Not Allowed'};
+	return {status: 0, msg: 'Notifications Not Allowed'};
 	else {
         return {status: 2, msg: 'Notification Permission Granted'};
     }};
