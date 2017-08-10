@@ -16,7 +16,7 @@
     var descriptor = {
         blocks: [
             // Block type, block name, function name
-            [' ', 'notify title %s content %s', 'notify', 'Hello World!', "I'm a notification"],
+            [' ', 'notify title %s content %s image %s', 'notify', 'Hello World!', "I'm a notification", 'https://jgames101.github.io/scratch-extensions/icon.png'],
         ]
     };
 
