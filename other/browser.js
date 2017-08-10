@@ -19,6 +19,7 @@ new (function() {
 		window.open(url);
 	};
 	ext.refresh = function() {
+		if (confirm('This Scratch Project is trying to refresh. Allow?'))
 		location.reload();
 	};
 	
