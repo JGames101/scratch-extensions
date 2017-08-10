@@ -12,12 +12,17 @@
         if (installed !== "granted")
          return true;
     };
+	
+    ext.loadExt = function(url) {
+	ScratchExtensions.loadExternalJS(url);
+    };
 
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
             // Block type, block name, function name
 	          ['b', 'jpack installed?', 'jinstalled']
+		  [' ', 'load external extension %s', 'loadExt', 'https://jgames101.github.io/scratch-extensions/notifications.js']
         ],
 	url: 'https://jgames101.github.io/scratch-extensions/'
     };
