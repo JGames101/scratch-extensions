@@ -15,7 +15,7 @@
             var notification = new Notification(name, {
             icon: image,
             body: content,
-	        title: name
+	    title: name
     })};
 
     // Block and block menu descriptions
@@ -28,4 +28,4 @@
 
     // Register the extension
     ScratchExtensions.register('Desktop Notifications', descriptor, ext);
-})({});
+}({});
