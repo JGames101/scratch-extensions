@@ -21,8 +21,8 @@
     var descriptor = {
         blocks: [
             // Block type, block name, function name
-	          ['b', 'jpack installed?', 'jinstalled']
-		  [' ', 'load external extension %s', 'loadExt', 'https://jgames101.github.io/scratch-extensions/notifications.js']
+	          ['b', 'jpack installed?', 'jinstalled'],
+		  [' ', 'load external extension %s', 'loadExt', 'https://jgames101.github.io/scratch-extensions/notifications.js'],
         ],
 	url: 'https://jgames101.github.io/scratch-extensions/'
     };
