@@ -2,7 +2,7 @@ new (function() {
 	var ext = this;
 	var descriptor = {
 		blocks: [
-			[' ', 'open window with URL %s', 'window', 'jgames101.github.io']
+			[' ', 'open window with URL %s', 'window', 'https://jgames101.github.io']
 		],
 		url : 'https://jgames101.github.io/scratch-extensions/'
 	};
