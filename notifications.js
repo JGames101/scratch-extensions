@@ -16,7 +16,7 @@
             icon: image,
             body: content,
 	        title: name
-    }};
+    })};
 
     // Block and block menu descriptions
     var descriptor = {
