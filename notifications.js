@@ -17,12 +17,19 @@
             body: content,
 	    title: name
     })}};
+    ext.permission = function() {
+	if (Notification.permission !== "granted")
+		return false;
+	else {
+		return true;
+    }}
 
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
             // Block type, block name, function name
             [' ', 'notify title %s content %s image %s', 'notify', 'Hello World!', "I'm a notification", 'https://jgames101.github.io/scratch-extensions/cat.png'],
+	    ['b', 'Notification Permission?', 'permission']
         ]
     };
 
