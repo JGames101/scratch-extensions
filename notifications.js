@@ -30,7 +30,8 @@
             // Block type, block name, function name
             [' ', 'notify title %s content %s image %s', 'notify', 'Hello World!', "I'm a notification", 'https://jgames101.github.io/scratch-extensions/cat.png'],
 	    ['b', 'notifications permitted?', 'permission']
-        ]
+        ],
+	url: 'https://scratch.mit.edu/discuss/topic/273122/'
     };
 
     // Register the extension
