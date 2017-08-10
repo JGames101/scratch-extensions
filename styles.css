@@ -1,0 +1,115 @@
+@charset "utf-8";
+nav {
+	color: white;
+	font-size: 20px;
+}
+#jsMissing {
+	background-color: #ff8e75;
+	color: black;
+}
+#player {
+	width: 500px;
+	height: 410px;
+	overflow: hidden;
+	position: relative;
+	margin: auto;
+}
+#navbar {
+	overflow-y: hidden;
+	display: none;
+}
+.int-player {
+	position: absolute;
+	top: -51px;
+	left: -2060px;
+}
+body {
+	background-color: #e84242;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+h1 {
+	color: white;
+	text-align: center;
+	font-size: 72px;
+	font-weight:200;
+}
+.content {
+	overflow: hidden;
+}
+.card {
+	background-color: white;
+	border-radius: 16px;
+	text-align: center;
+	display: inline-table;
+	margin-bottom: 16px;
+	margin-left: 10px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	min-height: 128px;
+	color: black;
+}
+h2 {
+	font-weight:700;
+}
+.navbtn {
+	color: white;
+	float: right;
+	margin-right: 16px;
+}
+.homebtn {
+	float: none;
+}
+.pinned {
+	color: white;
+	margin-left: 32px;
+}
+.info {
+	text-align: left;
+	color: #c4c4c4;
+	margin-left: 8px;
+	vertical-align: bottom;
+}
+@media (min-width: 0px) and (max-width: 991px){
+	.card {
+		width: 100%;
+		margin-left: 0px;
+		border-radius: 12px;
+		
+	}
+	.content {
+	}
+	body {
+		background-color: #e5e5e5;
+		padding: none;
+	}
+	#pageName {
+		color: black;
+	}
+	.pinned {
+		color: black;
+	}
+	.card {
+		font-size: 18px;
+	}
+	h2 {
+		font-size: 32px;
+	}
+}
+@media (min-width: 992px){
+	.card {
+		width: 45%;
+	}
+	.content {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+}
+
+@media (min-width: 1488px){
+	.card {
+		width: 32%;
+	}
+	.content {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
