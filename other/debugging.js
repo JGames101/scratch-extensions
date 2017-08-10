@@ -10,3 +10,6 @@ new (function() {
 	ext.logger = function(logthing) {
 		console.log(logthing)
 	};
+	
+	ScratchExtensions.register('JGames101 | Debugging', descriptor, ext);
+})();
