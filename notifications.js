@@ -6,8 +6,11 @@
     // Use this to report missing hardware, plugin or unsupported browser
     ext._getStatus = function() {
 	Notification.requestPermission();
-        return {status: 2, msg: 'Ready'};
-    };
+	if (Notification.permission !== "granted")
+	return {status: 1, msg: 'Notifications Not Allowed'};
+	else {
+        return {status: 2, msg: 'Notification Permission Granted'};
+    }};
 
     ext.notify = function(name, content, image) {
          if (Notification.permission !== "granted")
