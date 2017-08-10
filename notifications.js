@@ -8,7 +8,7 @@
         return {status: 2, msg: 'Ready'};
     };
 
-    ext.my_first_block = function() {
+    ext.notify = function() {
         // Code that gets executed when the block is run
     };
 
@@ -16,10 +16,10 @@
     var descriptor = {
         blocks: [
             // Block type, block name, function name
-            [' ', 'notify', 'notify title %s content %s', 'Hello World!', 'I'm a notification'],
+            [' ', 'notify title %s content %s', 'notify', 'Hello World!', "I'm a notification"],
         ]
     };
 
     // Register the extension
-    ScratchExtensions.register('My first extension', descriptor, ext);
+    ScratchExtensions.register('Desktop Notifications', descriptor, ext);
 })({});
