@@ -18,9 +18,6 @@
     ext.confirm_block = function(string) {
         return confirm(string);
     };
-    ext.installed = function(string) {
-        return true;
-    };
 
     // Block and block menu descriptions
     var descriptor = {
@@ -29,10 +26,9 @@
         	['r', 'ask %s', 'ask_block', "What's your name?"],
 		[' ', 'alert %s', 'alert_block', "hello world!"],
 		['b', 'confirm %s', 'confirm_block', ""],
-		['b', 'installed?', 'installed', ""],
         ]
     };
 
     // Register the extension
-    ScratchExtensions.register('JGames101 Extension Test 2', descriptor, ext);
+    ScratchExtensions.register('JGames101 | Alert Blocks', descriptor, ext);
 })({});
