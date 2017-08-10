@@ -39,5 +39,5 @@
     };
 
     // Register the extension
-    ScratchExtensions.register('JGames101 | Desktop Notifications', descriptor, ext);
+    ScratchExtensions.register('JGames101 | Notifications', descriptor, ext);
 })({});
