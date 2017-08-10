@@ -5,12 +5,9 @@
     // Status reporting code
     // Use this to report missing hardware, plugin or unsupported browser
     ext._getStatus = function() {
+	Notification.requestPermission();
         return {status: 2, msg: 'Ready'};
-	    if (Notification.permission !== "granted")
-            	Notification.requestPermission();
-	    else {
-		
-	    }};
+    };
 
     ext.notify = function(name, content, image) {
          if (Notification.permission !== "granted")
