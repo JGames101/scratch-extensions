@@ -9,7 +9,6 @@
     };
 
     ext.jinstalled = function() {
-        if (installed !== "granted")
          return true;
     };
 	
