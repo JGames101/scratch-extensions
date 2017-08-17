@@ -34,7 +34,7 @@ new (function() {
 			} else {
 				return false;
 			};
-		};
+		});
 	};
 	
 	ScratchExtensions.register('JGames101 | Browser', descriptor, ext);
