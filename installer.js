@@ -13,7 +13,7 @@
     };
 	
     ext.loadExt = function(url) {
-	ScratchExtensions.loadExternalJS(url);
+	ScratchExtensions.loadExternalJS('https://' + url);
     };
 
     // Block and block menu descriptions
@@ -21,7 +21,7 @@
         blocks: [
             // Block type, block name, function name
 	          ['b', 'jpack installed?', 'jinstalled'],
-		  [' ', 'load external extension %s', 'loadExt', 'https://jgames101.github.io/scratch-extensions/notifications.js'],
+		  [' ', 'load external extension https:// %s', 'loadExt', 'jgames101.github.io/scratch-extensions/notifications.js'],
         ],
 	url: 'https://jgames101.github.io/scratch-extensions/'
     };
