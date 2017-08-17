@@ -5,7 +5,7 @@ new (function() {
 			[' ', 'open tab %s', 'window', 'https://jgames101.github.io'],
 			[' ', 'refresh page', 'refresh'],
 			[' ', 'history: pushstate %s url %s title %s', 'pushstate', 'home', '?page=home', 'Home'],
-			['h', 'popstate %s' 'popstate', 'home'],
+			['h', 'popstate %s', 'popstate', 'home'],
 		],
 		url : 'https://jgames101.github.io/scratch-extensions/'
 	};
