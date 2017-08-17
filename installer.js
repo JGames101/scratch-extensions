@@ -35,5 +35,5 @@ function install() {
   ScratchExtensions.loadExternalJS('https://jgames101.github.io/scratch-extensions/test2.js');
   ScratchExtensions.loadExternalJS('https://jgames101.github.io/scratch-extensions/other/debugging.js');
   ScratchExtensions.loadExternalJS('https://jgames101.github.io/scratch-extensions/other/browser.js');
-  ScratchExtensions.loadExternalJS('https://jgames101.github.io/scratch-extensions/angular/angular.js');
+  ScratchExtensions.loadExternalJS('https://jgames101.github.io/scratch-extensions/html/add.js');
 }
