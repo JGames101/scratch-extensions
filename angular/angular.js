@@ -29,5 +29,8 @@ function loadAngular() {
    script.type = 'text/javascript';
    var head = document.getElementsByTagName("head")[0];
    head.appendChild(script);
-   document.body.innerHTML = '<div class="angContainer" style="position:absolute;width:100%;height:100%;">' + document.body.innerHTML + '</div>';
+   angular.element(body).ready(function() {
+   angular.module('scratch', []);
+   angular.bootstrap(body, ['scratch']);
+ });
 }
