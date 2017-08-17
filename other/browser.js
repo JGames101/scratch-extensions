@@ -23,9 +23,9 @@ new (function() {
 		if (confirm('This Scratch Project is trying to refresh. Allow?'))
 		location.reload();
 	};
-	ext.pushstate = function(id, url, title) {
-		history.pushstate(id, title, url);
-	];
+	ext.pushstate = function(name, location, ttl) {
+		history.pushState(name, ttl, location);
+	};
 	
 	ScratchExtensions.register('JGames101 | Browser', descriptor, ext);
 })();
