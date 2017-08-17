@@ -29,9 +29,9 @@ new (function() {
 	};
 	ext.popstate = function(name) {
 		window.addEventListener('popstate', e => {
-			if (e.state.name = name)
+			if (e.state.name === name) {
 				return true;
-			else {
+			} else {
 				return false;
 			};
 		};
