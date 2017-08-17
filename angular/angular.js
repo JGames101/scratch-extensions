@@ -21,7 +21,7 @@ new (function() {
 	
   if (confirm("This Project is attempting to load JGames101's AngularJS extension. Allow?"))
 	ScratchExtensions.register('JGames101 | AngularJS', descriptor, ext);
-  loadAngular();
+  	loadAngular();
 })();
 function loadAngular() {
    var script = document.createElement('script');
