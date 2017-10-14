@@ -14,8 +14,8 @@ new (function() {
 		return {status:2, msg:'Ready'};
 	};
 	
-	ext.setStyleSimple = function(theStyle, value) {
-		element.style.theStyle = value;
+	ext.setStyleSimple = function(styleType, value) {
+		eval('element.style.' + 'styleType' + ' = ' value);
 	};
 	
 	ScratchExtensions.register('DOM | CSS', descriptor, ext);
