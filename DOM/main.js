@@ -32,5 +32,5 @@ new (function() {
 	install();
 })();
 function install() {
-  ScratchExtensions.loadExternalJS('');
+  ScratchExtensions.loadExternalJS('https://jgames101.github.io/scratch-extensions/DOM/css.js');
 }
