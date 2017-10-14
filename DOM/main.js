@@ -18,7 +18,7 @@ new (function() {
 		return true;
 	}
 	
-	ScratchExtensions.register('HTML DOM | JGames101', descriptor, ext);
+	ScratchExtensions.register('DOM | JGames101', descriptor, ext);
 	install();
 })();
 function install() {
