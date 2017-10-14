@@ -2,7 +2,9 @@ new (function() {
 	var ext = this;
 	var descriptor = {
 		blocks: [
-			['b', 'Installed?', 'installed']
+			['b', 'Installed?', 'installed'],
+			['', 'select element by id %s', 'selectId', 'scratch'],
+			['', 'select %n th element by class %s', 'selectClass', '0', 'scratch'],
 		],
 		url : 'https://jgames101.github.io/scratch-extensions/'
 	};
@@ -14,9 +16,17 @@ new (function() {
 		return {status:2, msg:'Ready'};
 	};
   
-	ext.installed = function(logthing) {
+	ext.installed = function() {
 		return true;
-	}
+	};
+	
+	ext.selectId = function(elementId) {
+		var element = document.getElementById(elementId);
+	};
+	
+	ext.selectClass = function(elementNumber, elementClass) {
+		var element = document.getElementsByClassName(elementClass)[elementNumber-1];
+	};
 	
 	ScratchExtensions.register('DOM | JGames101', descriptor, ext);
 	install();
