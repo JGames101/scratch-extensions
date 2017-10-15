@@ -29,5 +29,11 @@ new (function() {
 		var element = document.getElementsByClassName(elementClass)[elementNumber-1];
 	};
 	
+	ext.setStyleSimple = function(styleType, value) {
+		var element = localStorage.getItem('element');
+		eval('element.style.' + styleType + ' = "' + value + '";');
+		console.log('changed ' + styleType + ' to ' + value + ' for ' + element);
+	};
+	
 	ScratchExtensions.register('DOM | JGames101', descriptor, ext);
 })();
