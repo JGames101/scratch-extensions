@@ -23,14 +23,17 @@ new (function() {
 	
 	ext.selectId = function(elementId) {
 		var element = document.getElementById(elementId);
+		localStorage.setItem('element', element);
 	};
 	
 	ext.selectClass = function(elementNumber, elementClass) {
 		var element = document.getElementsByClassName(elementClass)[elementNumber-1];
+		localStorage.setItem('element', element);
 	};
 	
 	ext.setStyleSimple = function(styleType, value) {
-		eval('document.getElementById("scratch").style.' + styleType + ' = "' + value + '";');
+		var element = localStorage.getItem('element');
+		eval('element.style.' + styleType + ' = "' + value + '";');
 		console.log('changed ' + styleType + ' to ' + value + ' for ' + element);
 	};
 	
