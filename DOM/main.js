@@ -33,7 +33,7 @@ new (function() {
 	
 	ext.setStyleSimple = function(styleType, value) {
 		var element = localStorage.getItem('element');
-		eval(element + '.style.' + styleType + ' = "' + value + '";');
+		eval('element.style.' + styleType + ' = "' + value + '";');
 		console.log('changed ' + styleType + ' to ' + value + ' for ' + element);
 	};
 	
