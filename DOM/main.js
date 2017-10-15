@@ -5,6 +5,7 @@ new (function() {
 			['b', 'Installed?', 'installed'],
 			['', 'select element by id %s', 'selectId', 'scratch'],
 			['', 'select %n th element by class %s', 'selectClass', '0', 'scratch'],
+			[' ', 'set style %s to %s', 'setStyleSimple', 'width', '100%'],
 		],
 		url : 'https://jgames101.github.io/scratch-extensions/'
 	};
@@ -22,17 +23,11 @@ new (function() {
 	
 	ext.selectId = function(elementId) {
 		var element = document.getElementById(elementId);
-		localStorage.setItem('element', element);
 	};
 	
 	ext.selectClass = function(elementNumber, elementClass) {
 		var element = document.getElementsByClassName(elementClass)[elementNumber-1];
-		localStorage.setItem('element', element);
 	};
 	
 	ScratchExtensions.register('DOM | JGames101', descriptor, ext);
-	install();
 })();
-function install() {
-  ScratchExtensions.loadExternalJS('https://jgames101.github.io/scratch-extensions/DOM/css.js');
-}
