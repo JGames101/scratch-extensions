@@ -2,7 +2,8 @@ new (function() {
 	var ext = this;
 	var descriptor = {
 		blocks: [
-			['b', 'localStorage Supported?', 'lcheckLocalStoage'],
+			['r', '%s', 'readLocalStorage', 'highscore'],
+			[' ', 'set %s to %s', 'setLocalStorage', 'highscore', '12'],
 		],
 		url : 'https://jgames101.github.io/scratch-extensions/'
 	};
@@ -18,12 +19,12 @@ new (function() {
     };
 	};
   
-	ext.checkLocalStorage = function() {
-		if (window.localStorage.minilogSettings) {
-		  	return true;
-    		} else {
-      			return false;
-    		};
+	ext.readLocalStorage = function(name) {
+		return localStorage.getItem(name);
+	};
+	
+	ext.setLocalStorage = function(name, value) {
+		return localStorage.setItem(name, value);
 	};
 
 	ScratchExtensions.register('LocalStorage Variables | James M', descriptor, ext);
