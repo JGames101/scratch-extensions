@@ -19,11 +19,11 @@ new (function() {
 	};
   
 	ext.checkLocalStorage = function() {
-		if (window.localStorage) {
-		  return true;
-    } else {
-      return false;
-    };
+		if (window.localStorage.minilogSettings) {
+		  	return true;
+    		} else {
+      			return false;
+    		};
 	};
 
 	ScratchExtensions.register('LocalStorage Variables | James M', descriptor, ext);
