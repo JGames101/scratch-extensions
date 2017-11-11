@@ -27,5 +27,5 @@ new (function() {
 		return localStorage.setItem(name, value);
 	};
 
-	ScratchExtensions.register('LocalStorage Variables | James M', descriptor, ext);
+	ScratchExtensions.register('LocalStorage Variables', descriptor, ext);
 })();
