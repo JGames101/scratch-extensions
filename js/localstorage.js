@@ -5,7 +5,7 @@ new (function() {
 			['r', '%s', 'readLocalStorage', 'highscore'],
 			[' ', 'set %s to %s', 'setLocalStorage', 'highscore', '12'],
 		],
-		url : 'https://jgames101.github.io/scratch-extensions/'
+		url : 'https://jgames101.github.io/scratch-extensions/localstorage.html'
 	};
 	ext._shutdown = function() {
 		
