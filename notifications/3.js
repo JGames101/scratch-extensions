@@ -4,9 +4,8 @@
     This was my first test with extensions for Scratch 3.
 */
 
-Notification.requestPermission();
-
 var Notifications = function () {
+	Notification.requestPermission();
 };
 
 /**
