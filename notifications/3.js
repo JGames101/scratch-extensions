@@ -5,7 +5,6 @@
 */
 
 var Notifications = function () {
-	Notification.requestPermission();
 };
 
 /**
@@ -44,7 +43,13 @@ Notifications.prototype.getInfo = function () {
                 blockType: Scratch.BlockType.BOOLEAN,
                 text: 'notifications permitted?',
                 func: 'notPermitted'
-            }
+            },
+	    {
+		opcode: 'notification-request',
+                blockType: Scratch.BlockType.COMMAND,
+                text: 'request notification permission',
+                func: 'requestPermission'
+	    }
         ],
 
         // translations
@@ -84,6 +89,10 @@ Notifications.prototype.notPermitted = function () {
 	else {
 		return true;
     };
+};
+
+Notifications.prototype.requestPermission = function () {
+	Notification.requestPermission();
 };
 
 Scratch.extensions.register(new Notifications());
