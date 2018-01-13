@@ -2,9 +2,9 @@
     Hello!
     Thanks for checking out my extension ported to Scratch 3.
     This was my first test with extensions for Scratch 3.
-    To use it, visit jgames101.github.io/scratch-3-ext
-    There, you'll see my two extensions in the Scratch 3 UI.
 */
+
+Notification.requestPermission();
 
 var Notifications = function () {
 };
@@ -69,14 +69,9 @@ Notifications.prototype.getInfo = function () {
  * @returns {string} a string which includes the block argument value.
  */
 Notifications.prototype.showNotification = function (args) {
-    if (Notification.permission !== "granted") {
+    if (Notification.permission !== "granted")
         Notification.requestPermission();
-        var notification = new Notification(args.TITLE, {
-            icon: args.IMAGE,
-            body: args.CONTENT,
-            title: args.TITLE
-        })
-    } else {
+    else {
         var notification = new Notification(args.TITLE, {
         icon: args.IMAGE,
         body: args.CONTENT,
