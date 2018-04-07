@@ -8,33 +8,12 @@ GetExt.prototype.getInfo = function () {
     return {
         id: 'someBlocks',
 
-        name: 'notifications',
+        name: 'Get',
 
         blocks: [
             {
-                opcode: 'notification-show',
-                blockType: Scratch.BlockType.COMMAND,
-                blockAllThreads: false,
-                text: 'Notify title [TITLE] content [CONTENT] image [IMAGE]',
-                func: 'showNotification',
-                arguments: {
-                    TITLE: {
-                        type: Scratch.ArgumentType.STRING,
-                        defaultValue: 'Hello World!'
-                    },
-                    CONTENT: {
-                        type: Scratch.ArgumentType.STRING,
-                        defaultValue: 'I\'m a notification.'
-                    },
-                    IMAGE: {
-                        type: Scratch.ArgumentType.STRING,
-                        defaultValue: 'https://jgames101.github.io/scratch-extensions/cat.png'
-                    }
-                }
-            },
-            {
                 opcode: 'get-url',
-                blockType: Scratch.BlockType.BOOLEAN,
+                blockType: Scratch.BlockType.REPORTER,
                 text: 'get [URL]',
                 func: 'getURL',
                 blockAllThreads: true,
